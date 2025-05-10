@@ -1,0 +1,118 @@
+:root {
+  --color-bg: #242424;
+  --color-bg-secondary: #232a36;
+  --color-bg-tertiary: #0e1930;
+  --color-border: #2d3a5a;
+  --color-accent: #3a7cff;
+  --color-accent-light: #8da8e0;
+  --color-text: rgba(255, 255, 255, 0.87);
+  --color-text-secondary: #e0e6f0;
+  --color-btn-bg: #1a1a1a;
+  --color-btn-hover: #475674;
+  --color-dropdown-bg: #0f173d;
+  --color-dropdown-hover: #3a7cff33;
+  --color-dropdown-selected: #7ba0f033;
+
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #f5f7fa;
+    --color-bg-secondary: #f0f2f8;
+    --color-bg-tertiary: #ffffff;
+    --color-border: #bfc8e6;
+    --color-accent: #3a7cff;
+    --color-accent-light: #3a7cff33;
+    --color-text: #213547;
+    --color-text-secondary: #2d3a5a;
+    --color-btn-bg: #f9f9f9;
+    --color-btn-hover: #e3eaff;
+    --color-dropdown-bg: #ffffff;
+    --color-dropdown-hover: #e3eaff;
+    --color-dropdown-selected: #dbeafe;
+
+    color: var(--color-text);
+    background-color: var(--color-bg);
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(60%);
+  pointer-events: none;
+}
+
+.output-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.output-actions button {
+    flex: 1;
+    padding: 12px 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-btn-bg);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(20,30,60,0.10);
+}
+
+.output-actions button:hover {
+    background: var(--color-btn-hover);
+}
+
+.github-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--color-text);
+  z-index: 1000;
+  font-size: 3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.github-icon:hover {
+  color: var(--color-accent);
+}

@@ -1,0 +1,90 @@
+.dropdown {
+	position: relative;
+	margin-bottom: 10px;
+	display: block;
+}
+  
+.dropdown-label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: var(--color-text);
+}
+  
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+  
+.search-bar {
+	width: 100%;
+	border: 1.5px solid var(--color-border);
+	border-radius: 10px;
+	padding: 12px 14px;
+	font-size: 1.08rem;
+	box-sizing: border-box;
+	background: var(--color-bg-tertiary);
+	color: var(--color-text);
+}
+  
+.search-bar:hover {
+	background: var(--color-dropdown-hover);
+	color: var(--color-text);
+	cursor: pointer;
+}
+  
+.search-bar:focus,
+.search-bar.active,
+.search-bar.selected {
+	background: var(--color-bg-tertiary);
+	color: var(--color-text);
+	cursor: text;
+}
+  
+.options-outer {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	max-height: 240px;
+	overflow: hidden;
+	background: var(--color-dropdown-bg);
+	border: 1.5px solid var(--color-border);
+	border-radius: 10px;
+	padding: 12px 14px;
+	box-sizing: border-box;
+	z-index: 10;
+	margin: 0;
+}
+.options-inner {
+	overflow-y: auto;
+	height: 200px;
+}
+  
+.option {
+	padding: 16px 16px;
+	margin: 5px;
+	font-size: 1.08rem;
+	border-radius: 6px;
+	color: var(--color-text);
+	transition: background 0.15s;
+}
+  
+.option:hover {
+	background: var(--color-dropdown-hover);
+	cursor: pointer;
+}
+  
+.option.active{
+	background: var(--color-dropdown-hover);
+}
+  
+
+.option.selected {
+	background: var(--color-dropdown-selected);
+}

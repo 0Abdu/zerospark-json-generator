@@ -1,0 +1,28 @@
+.output-section {
+    margin-top: 36px;
+    background: var(--color-bg-secondary);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(20,30,60,0.22);
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.json-output {
+	width: 100%;
+	font-family: 'Fira Mono', 'Consolas', monospace;
+	font-size: 1.04em;
+	margin-bottom: 12px;
+	border-radius: 8px;
+	border: 2px solid var(--color-border);
+	padding: 12px;
+	background: var(--color-bg-tertiary);
+	color: var(--color-text-secondary);
+	resize: none;
+	transition: border 0.2s, box-shadow 0.2s;
+	box-sizing: border-box;
+	height: 350px;
+}
+.json-output:focus {
+	border: 2px solid var(--color-accent);
+	box-shadow: 0 0 0 2px var(--color-accent-light);
+}
